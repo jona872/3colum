@@ -82,7 +82,7 @@ section>img {
   margin-bottom: 30px;
 }
 
-section>h1 {
+section>h2 {
   color: var(--vlGray);
   font-family: 'Big Shoulders Display', cursive;
   margin: 0 0 26px 0;
@@ -155,7 +155,7 @@ section:nth-child(3) {
     margin-bottom: 30px;
   }
 
-  section>h1 {
+  section>h2 {
     color: var(--vlGray);
     font-family: 'Big Shoulders Display', cursive;
     margin-bottom: 28px;
