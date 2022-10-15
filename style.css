@@ -32,11 +32,11 @@ html {
   background-color: var(--bOrange);
 }
 
-.section1>button {
+.section1>a {
   color: var(--bOrange);
 }
 
-.section1>button:hover {
+.section1>a:hover {
   background-color: var(--bOrange);
   border: 1px solid var(--vlGray);
   color: var(--vlGray);
@@ -46,11 +46,11 @@ html {
   background-color: var(--dCyan);
 }
 
-.section2>button {
+.section2>a {
   color: var(--dCyan)
 }
 
-.section2>button:hover {
+.section2>a:hover {
   background-color: var(--dCyan);
   border: 1px solid var(--vlGray);
   color: var(--vlGray);
@@ -60,11 +60,11 @@ html {
   background-color: var(--vdCyan);
 }
 
-.section3>button {
+.section3>a {
   color: var(--vdCyan);
 }
 
-.section3>button:hover {
+.section3>a:hover {
   background-color: var(--vdCyan);
   border: 1px solid var(--vlGray);
   color: var(--vlGray);
@@ -101,17 +101,19 @@ section>p {
   line-height: 25px;
 }
 
-section>button {
+section>a {
   background-color: var(--vlGray);
   color: orange;
   font-family: 'Lexend Deca', sans-serif;
   width: 146px;
   height: 48px;
-  margin: 0 auto;
   border-radius: 24px;
   border: none;
   font-size: 1rem;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Selects the second li element in a list */
@@ -172,13 +174,13 @@ section:nth-child(3) {
     line-height: 25px;
   }
 
-  section>button {
+  section>a {
     background-color: var(--vlGray);
     color: orange;
     font-family: 'Lexend Deca', sans-serif;
     width: 146px;
     height: 48px;
-    margin: 0 auto;
+    margin-left: 0;
     border-radius: 24px;
     border: none;
     font-size: 1rem;
