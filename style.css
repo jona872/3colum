@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+/*
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
+*/
+
+:root {
+  /* ### Primary  */
+  /* Bright orange: hsl(31, 77%, 52%)  */
+  --bOrange: hsl(31, 77%, 52%);
+  /* Dark cyan: hsl(184, 100%, 22%)  */
+  --dCyan: hsl(184, 100%, 22%);
+  /* Very dark cyan: hsl(179, 100%, 13%)  */
+  --vdCyan: hsl(179, 100%, 13%);
+
+  /* ### Neutral */
+  /* Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75) */
+  --tWhite: hsla(0, 0%, 100%, 0.75);
+  /* Very light gray (background, headings, buttons): hsl(0, 0%, 95%) */
+  --vlGray: hsl(0, 0%, 95%);
+}
+
+html {
+  font-size: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.section1 {
+  background-color: var(--bOrange);
+}
+
+.section1>button {
+  color: var(--bOrange);
+}
+
+.section1>button:hover {
+  background-color: var(--bOrange);
+  border: 1px solid var(--vlGray);
+  color: var(--vlGray);
+}
+
+.section2 {
+  background-color: var(--dCyan);
+}
+
+.section2>button {
+  color: var(--dCyan)
+}
+
+.section2>button:hover {
+  background-color: var(--dCyan);
+  border: 1px solid var(--vlGray);
+  color: var(--vlGray);
+}
+
+.section3 {
+  background-color: var(--vdCyan);
+}
+
+.section3>button {
+  color: var(--vdCyan);
+}
+
+.section3>button:hover {
+  background-color: var(--vdCyan);
+  border: 1px solid var(--vlGray);
+  color: var(--vlGray);
+}
+
+/* MarkUp ================================================ */
+section {
+  padding: 47px 49px;
+  width: 326px;
+  height: 442px;
+  margin: 0 auto;
+}
+
+section>img {
+  margin-bottom: 30px;
+}
+
+section>h1 {
+  color: var(--vlGray);
+  font-family: 'Big Shoulders Display', cursive;
+  margin: 0 0 26px 0;
+
+  font-size: 2.6rem;
+  font-weight: 700;
+
+}
+
+section>p {
+  color: var(--tWhite);
+  font-family: 'Lexend Deca', sans-serif;
+  margin: 0 0 25px 0;
+
+  font-size: 1rem;
+  line-height: 25px;
+}
+
+section>button {
+  background-color: var(--vlGray);
+  color: orange;
+  font-family: 'Lexend Deca', sans-serif;
+  width: 146px;
+  height: 48px;
+  margin: 0 auto;
+  border-radius: 24px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Selects the second li element in a list */
+section:nth-child(1) {
+  border-radius: 6px 6px 0 0;
+}
+
+section:nth-child(2) {
+  border-radius: 0px;
+}
+
+section:nth-child(3) {
+  border-radius: 0 0 6px 6px;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  main {
+    display: flex;
+    width: 918px;
+    height: 499px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+
+  section {
+    height: 100%;
+    padding: 47px 48px;
+    border-radius: 0 !important;
+  }
+
+  section>img {
+    margin-bottom: 30px;
+  }
+
+  section>h1 {
+    color: var(--vlGray);
+    font-family: 'Big Shoulders Display', cursive;
+    margin-bottom: 28px;
+    font-size: 2.6rem;
+    font-weight: 700;
+  }
+
+  section>p {
+    color: var(--tWhite);
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 0 0 84px 0;
+
+    font-size: 1rem;
+    line-height: 25px;
+  }
+
+  section>button {
+    background-color: var(--vlGray);
+    color: orange;
+    font-family: 'Lexend Deca', sans-serif;
+    width: 146px;
+    height: 48px;
+    margin: 0 auto;
+    border-radius: 24px;
+    border: none;
+    font-size: 1rem;
+  }
+
+
+}
